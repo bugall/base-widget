@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import '../model/post.dart';
 
-class List extends StatelessWidget {
+class BList extends StatelessWidget {
   Widget _listItemBuilder(BuildContext context, int index) {
-    return  Container(
+    return Container(
       color: Colors.white,
       margin: EdgeInsets.all(8.0),
       child: Column(
@@ -18,19 +18,19 @@ class List extends StatelessWidget {
             posts[index].author,
             style: Theme.of(context).textTheme.subtitle,
           ),
-          SizedBox(height: 16.0,)
+          SizedBox(
+            height: 16.0,
+          )
         ],
       ),
     );
   }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Text('LIST'),
-      ),
-      body: ListView.builder(
+    return Container(
+      color: Colors.white,
+      child: ListView.builder(
         itemCount: posts.length,
         itemBuilder: _listItemBuilder,
       ),
