@@ -13,16 +13,16 @@ final List<Post> posts = [
   Post(
     title: 'Candy Shop',
     author: 'Mohamed Chahin',
-    imageUrl: 'https://ee.bytedance.net/ratak/employees/3279055/avatar/?format=noop.png',
+    imageUrl: 'https://avatars2.githubusercontent.com/u/8531791?s=460&v=4',
   ),
   Post(
     title: 'litengfei',
-    author: 'litengfei@bytedance.com',
-    imageUrl: 'https://ee.bytedance.net/ratak/employees/9202162/avatar/?format=noop.png',
+    author: 'litengfei@bugall.com',
+    imageUrl: 'https://avatars2.githubusercontent.com/u/8531791?s=460&v=4',
   ),
   Post(
     title: 'liuye.adam',
-    author: 'liuye.adam@bytedance.com',
-    imageUrl: 'https://ee.bytedance.net/ratak/employees/9635121/avatar/?format=noop.png',
+    author: 'liuye.adam@bugall.com',
+    imageUrl: 'https://avatars2.githubusercontent.com/u/8531791?s=460&v=4',
   ),
 ];

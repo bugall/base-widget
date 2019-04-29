@@ -10,16 +10,16 @@ class BDraw extends StatelessWidget {
           UserAccountsDrawerHeader(
             accountName:
                 Text('BUGALL', style: TextStyle(fontWeight: FontWeight.bold)),
-            accountEmail: Text('litengfei@bytedance'),
+            accountEmail: Text('litengfei@net.com'),
             currentAccountPicture: CircleAvatar(
               backgroundImage: NetworkImage(
-                  'https://ee.bytedance.net/ratak/employees/9202162/avatar/?format=noop.png'),
+                  'https://avatars2.githubusercontent.com/u/8531791?s=460&v=4'),
             ),
             decoration: BoxDecoration(
                 color: Colors.yellow[400],
                 image: DecorationImage(
                     image: NetworkImage(
-                        'https://ee.bytedance.net/ratak/employees/3279055/avatar/?format=noop.png'),
+                        'https://avatars2.githubusercontent.com/u/8531791?s=460&v=4'),
                     fit: BoxFit.cover,
                     colorFilter: ColorFilter.mode(
                         Colors.yellow[500], BlendMode.hardLight))),

@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 import '../draw.dart';
 import '../bottomNavigationBar.dart';
 import '../list.dart';
+import './second.dart';
+import '../layout.dart';
+import '../webview.dart';
 
 class TabSimple extends StatelessWidget {
-
-
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 3,
+        length: 4,
         child: Scaffold(
           backgroundColor: Colors.grey,
           appBar: AppBar(
@@ -35,20 +36,16 @@ class TabSimple extends StatelessWidget {
                   Tab(icon: Icon(Icons.local_florist)),
                   Tab(icon: Icon(Icons.change_history)),
                   Tab(icon: Icon(Icons.directions_bike)),
+                  Tab(icon: Icon(Icons.web)),
                 ],
               )),
           body: TabBarView(
             children: <Widget>[
               BList(),
-              new Container(
-                color: Colors.white,
-                child: Icon(Icons.local_florist,
-                    size: 128.0, color: Colors.black12),
-              ),
-              new Container(
-                color: Colors.white,
-                child: Icon(Icons.directions_bike,
-                    size: 128.0, color: Colors.black12),
+              SecondContext(),
+              BLayout(),
+              Expanded(
+                child: WebViewExample(),
               )
             ],
           ),
